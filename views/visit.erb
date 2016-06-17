@@ -25,9 +25,9 @@
   </div>
 <p><label>Выберите барбера</label></p>
 <p><select name="barber" class="form-control">
-  <option>Walt</option>
-  <option>Jessie</option>
-  <option>Gus</option>
+  <option  <%= @barber == 'Walt' ? 'selected' : '' %>>Walt</option>
+  <option <%= @barber == 'Jessie' ? 'selected' : '' %>>Jessie</option>
+  <option  <%= @barber == 'Gus' ? 'selected' : '' %>>Gus</option>
  </select>
 </p>
  
